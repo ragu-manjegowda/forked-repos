@@ -93,11 +93,10 @@ class LineChart:
             jsonData["rows"].append({"c": \
                                      [{"v": x} for x in [xval] + yvalues]})
 
-        f = open(filename, "w")
-        f.write(chart_html_template % {"jsonData": \
-                                json.dumps(jsonData, indent=1),
-                                "options": json.dumps(options)})
-        f.close()
+        with open(filename, "w") as f:
+            f.write(chart_html_template % {"jsonData": \
+                                    json.dumps(jsonData, indent=1),
+                                    "options": json.dumps(options)})
 
         cls.lineCount += 1
 
