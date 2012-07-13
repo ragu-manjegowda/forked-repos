@@ -81,11 +81,17 @@ class LineChart:
 
         if xaxislimits:
             options["hAxis"] = {"minValue": xaxislimits[0],
-                                "maxValue": xaxislimits[1]}
+                                "maxValue": xaxislimits[1],
+                                "viewWindowMode": "explicit",
+                                "viewWindow": {"min": xaxislimits[0],
+                                               "max": xaxislimits[1]}}
 
         if yaxislimits:
             options["vAxis"] = {"minValue": yaxislimits[0],
-                                "maxValue": yaxislimits[1]}
+                                "maxValue": yaxislimits[1],
+                                "viewWindowMode": "explicit",
+                                "viewWindow": {"min": yaxislimits[0],
+                                               "max": yaxislimits[1]}}
 
         jsonData = {"cols": cls.cellColData, "rows": []}
 
