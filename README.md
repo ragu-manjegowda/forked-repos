@@ -4,11 +4,11 @@ Rendezvous
 Rendezvous is a **simple** javascript GUI that runs in your browser and allows to track the position of your device/robot on a global map.
 The application supports _ROS_ (Robotic Operating System) standard location messages and can be easily customized to fit your needs.
 
-DEPENDENCIES:
+Dependencies:
 -------------
 [Rosbridge](http://wiki.ros.org/rosbridge_suite) is needed to run Rendezvous.
     
-HOWTO:
+HowTo:
 ------
 
 * [Generate](https://code.google.com/apis/console) your personal Gmaps API key. Then paste it in the `index.html` file:
@@ -22,7 +22,7 @@ HOWTO:
 
 ![Rendezvous screenshot](http://oi61.tinypic.com/kejiiu.jpg "Rendezvous screenshot")
 
-HINTS:
+Hints:
 ------
 * You can adjust the data update-rate in the GUI modifying the `updateRate` variable in `subscriber_ros_gui.js`;
 * You can change the displayed icon modifying the `url` entry in the `startVisualization()` function (`map_init_gmaps.js`). the `images` folder contains some alternative icons you may want to use. Remember to specify the correct anchor point for the new icon in order to correctly align it to the GPS trace.
