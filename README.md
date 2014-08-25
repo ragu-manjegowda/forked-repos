@@ -12,9 +12,7 @@ HowTo:
 ------
 
 * [Generate](https://code.google.com/apis/console) your personal Gmaps API key. Then paste it in the `index.html` file:
-
     `src="https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX">`
-
 * In the `subscriber_ros_gui.js` be sure to set the `url` parameter in the `ros` variable to match your rosbridge configuration and
 * set the `name` parameter in the `listener` variable accordingly to your GPS message naming convention;
 * Launch `rosbridge` together with your custom ROS environment;
