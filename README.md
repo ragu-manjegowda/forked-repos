@@ -2,7 +2,7 @@ Rendezvous
 ==========
 
 Rendezvous is a **simple** javascript GUI that runs in your browser and allows to track the position of your device/robot on a global map.
-The application supports _ROS_ (Robotic Operating System) standard location messages and can be easily customized to fit your needs.
+The application supports the _ROS_ (Robotic Operating System) standard GPS-location message [sensor_msgs/NavSatFix](http://docs.ros.org/hydro/api/sensor_msgs/html/msg/NavSatFix.html) and can be easily customized to fit your needs.
 
 Dependencies:
 -------------
