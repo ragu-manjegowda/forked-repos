@@ -1,8 +1,16 @@
 Rendezvous
 ==========
 
-Rendezvous is a **simple** javascript GUI that runs in your browser and allows to track the position of your device/robot on a global map.
-The application supports the _ROS_ (Robotic Operating System) standard GPS-location message [sensor_msgs/NavSatFix](http://docs.ros.org/hydro/api/sensor_msgs/html/msg/NavSatFix.html) and can be easily customized to fit your needs.
+Rendezvous is a **simple** javascript GUI that runs in your browser and displays the position of your device/robot on a global map in real time.
+
+Rendezvous offers basic visualization of:
+* GPS Position
+* Magnetic heading
+* Accuracy of the GPS position
+* GPS Fix status
+
+The application supports the _ROS_ (Robotic Operating System) standard GPS-location  [sensor_msgs/NavSatFix](http://docs.ros.org/hydro/api/sensor_msgs/html/msg/NavSatFix.html) and magnetometer [sensor_msgs/MagneticField](http://docs.ros.org/hydro/api/sensor_msgs/html/msg/MagneticField.html) messages
+and it can be very easily customized to fit your needs.
 
 Dependencies:
 -------------
@@ -18,12 +26,12 @@ HowTo:
 * Launch `rosbridge` together with your custom ROS environment;
 * Open `index.html` with your favourite browser.
 
-![Rendezvous screenshot](http://oi61.tinypic.com/kejiiu.jpg "Rendezvous screenshot")
+![Rendezvous screenshot](http://oi58.tinypic.com/73cift.jpg "Rendezvous screenshot")
 
-Hints:
+Notes:
 ------
-* You can adjust the data update-rate in the GUI modifying the `updateRate` variable in `subscriber_ros_gui.js`;
-* You can change the displayed icon modifying the `url` entry in the `startVisualization()` function (`map_init_gmaps.js`). the `images` folder contains some alternative icons you may want to use. Remember to specify the correct anchor point for the new icon in order to correctly align it to the GPS trace.
+* You can adjust the on-screen update-rate in the GUI modifying the `updateRate` variable in `subscriber_ros_gui.js`;
+* The heading angle is computed very roughly directly from the magnetic field components in the magnetometer message, this is very likely to produce unprecise and biased heading estimates. You've been warned :)
 
 GMAPS API DISCLAIMER: 
 ---------------------
