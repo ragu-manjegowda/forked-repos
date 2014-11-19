@@ -26,12 +26,12 @@ HowTo:
 * Launch `rosbridge` together with your custom ROS environment;
 * Open `index.html` with your favourite browser.
 
-![Rendezvous screenshot](http://oi58.tinypic.com/73cift.jpg "Rendezvous screenshot")
+![Rendezvous screenshot](http://s7.postimg.org/3ofu9acbv/rendezvous.png "Rendezvous screenshot")
 
 Notes:
 ------
 * You can adjust the on-screen update-rate in the GUI modifying the `updateRate` variable in `subscriber_ros_gui.js`;
-* The heading angle is computed very roughly directly from the magnetic field components in the magnetometer message, this is very likely to produce unprecise and biased heading estimates. You've been warned :)
+* The heading angle is computed very roughly directly from the magnetic field components in the magnetometer message without tilt compensation. This is very likely to produce unprecise and biased heading estimates. You've been warned :)
 
 GMAPS API DISCLAIMER: 
 ---------------------

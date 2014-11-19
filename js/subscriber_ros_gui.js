@@ -19,13 +19,13 @@ var ros = new ROSLIB.Ros({
 // ----------------------
 var navSatFixListener = new ROSLIB.Topic({
     ros: ros,
-    name: 'gps_fix', //topic name
+    name: 'drdre/gps_fix', //topic name
     messageType: 'sensor_msgs/NavSatFix' //message Type
 });
 
 var magneticFieldListener = new ROSLIB.Topic({
     ros: ros,
-    name: 'magnetometer', //topic name
+    name: 'drdre/magnetometer', //topic name
     messageType: 'sensor_msgs/MagneticField' //message Type
 });
 

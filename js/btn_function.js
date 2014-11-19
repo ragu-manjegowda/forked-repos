@@ -19,12 +19,17 @@ function f_btnCallback4()
 
 }
 
-function f_btnCallback5()
+function f_btnCallbackStart()
 {
 
 }
 
-function f_btnCallback6()
+function f_btnCallbackWarning()
 {
-	
+
+}
+
+function f_btnCallbackStop()
+{
+
 }

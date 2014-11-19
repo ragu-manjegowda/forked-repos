@@ -7,92 +7,130 @@
 
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<style type="text/css">
-	html { height: 100% }
-	body { height: 100%; margin: 0; padding: 0 }
-	#map-canvas { height: 100% }
+		html { height: 100%; }
+		body { height: 100%; padding-top: 15px; padding-right: 70px; padding-bottom: 25px; padding-left: 70px; }
+		#map-canvas {height: 800px; width: 100%; }
 	</style>
 	<script type="text/javascript"
-	src="https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX">
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbCegTmosQTythuNphqbFXJF7QfYtLDjM">
 	</script>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-	<title> - Rendezvous - </title>
+<title> - Rendezvous - </title>
 
-		<!-- Bootstrap -->
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<!-- /Bootstrap -->
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- /JQUERY -->
 
-		<!-- JQUERY -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<!-- /JQUERY -->
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> 
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!-- /Bootstrap -->
 
-		<!-- ROS JS -->
-		<script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
-		<script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
-		<!-- /ROS JS -->
+<!-- Flat UI -->
+<link href="css/flat-ui.css" rel="stylesheet">
+<!-- /Flat UI -->
 
-		<!-- BUTTONS FUNCTIONS -->
-		<script src="js/btn_function.js"></script>
-		<!-- /BUTTONS FUNCTIONS -->
+<!-- ROS JS -->
+<script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+<script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+<!-- /ROS JS -->
+
+<!-- BUTTONS FUNCTIONS -->
+<script src="js/btn_function.js"></script>
+<!-- /BUTTONS FUNCTIONS -->
 
 </head>
 
-<body style="height:100%">
-	<div class="all" style="height:100%"> 
+<body>
 
-		<div style="height:100%"> 
-			<div class="btn-group btn-group-justified">
-				<div class="btn-group">
-					<button id="btn1" type="button" class="btn btn-default" onclick="f_btnCallback1()">
-						<span class="glyphicon glyphicon-play-circle"></span> Function 1
+	<nav class="navbar navbar-default navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a class="navbar-brand" href="#">RendezVous</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-collapse-3">
+			<ul class="nav navbar-nav">
+				<li><a href="#1">First Item</a></li>
+				<li><a href="#2">Second Item</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+				<li><a href="#3">Contacts</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+				<div class="col-md-12 text-center">
+
+					<button type="button" class="btn btn-default" onclick="f_btnCallback1()">
+						<span class="glyphicon glyphicon-send"></span> Function 1
 					</button>
-				</div>
 
-				<div class="btn-group">
-					<button id="btn2" type="button" class="btn btn-default" onclick="f_btnCallback2()">
-						<span class="glyphicon glyphicon-home"></span>  Function 2
+					<button type="button" class="btn btn-default" onclick="f_btnCallback2()">
+						<span class="glyphicon glyphicon-facetime-video"></span> Function 2
 					</button>
-				</div>
 
-				<div class="btn-group">
-					<button id="btn3" type="button" class="btn btn-default" onclick="f_btnCallback3()">
-						<span class="glyphicon glyphicon-screenshot"></span> Function 3
+					<button type="button" class="btn btn-default" onclick="f_btnCallback3()">
+						<span class="glyphicon glyphicon-sort"></span> Function 3
 					</button>
-				</div>
 
-				<div class="btn-group">
-					<button id="btn4" type="button" class="btn btn-default" onclick="f_btnCallback4()">
-						<span class="glyphicon glyphicon-remove-sign"></span> Function 4
+					<button type="button" class="btn btn-default" onclick="f_btnCallback4()">
+						<span class="glyphicon glyphicon-stats"></span> Function 4
 					</button>
-				</div>
 
-				<div class="btn-group">
-					<button id="btn5" type="button" class="btn btn-default" onclick="f_btnCallback5()">
-						<span class="glyphicon glyphicon-thumbs-up"></span> Function 5
+					<button type="button" class="btn btn-success" onclick="f_btnCallbackStart()">
+						<span class="glyphicon glyphicon-play"></span> START
 					</button>
-				</div>
 
-			</div>
-			<!-- map -->	
-			<script src="js/map_init_gmaps.js"></script>
-			<div id="map-canvas" class='map' style="position:relative; height:95%; width:98%; margin:0 auto;" ></div>
-			<!-- /map -->
-		</div>		
+					<button type="button" class="btn btn-warning" onclick="f_btnCallbackWarning()">
+						<span class="glyphicon glyphicon-pause"></span> PAUSE
+					</button>
+
+					<button type="button" class="btn btn-danger" onclick="f_btnCallbackStop()">
+						<span class="glyphicon glyphicon-stop"></span> STOP
+					</button>
+
+				</div>
+		</div>
+
+	<div class="row">
+	<p>
+	        <div class="col-md-12">
+		<!-- map -->	
+		<script src="js/map_init_gmaps.js"></script>
+		<!-- /map -->
+		<div id="map-canvas" class='map' ></div>
+		        </div>
+	</p>
 	</div>
+</div>
 
-	<!-- jQuery and JavaScript plugins -->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<!--script src="js/bootstrap.min.js"></script-->
-	<!-- LISTENER.JS -->
-	<script type="text/javascript" src="js/subscriber_ros_gui.js"></script>
-	<!-- PUBLISHER.JS -->
-	<!-- <script type="text/javascript" src="js/publisher_gui_ros.js"></script> -->
-	<!-- Importing jQuery library -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+<!-- jQuery and JavaScript plugins -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<!--script src="js/bootstrap.min.js"></script-->
+<!-- LISTENER.JS -->
+<script type="text/javascript" src="js/subscriber_ros_gui.js"></script>
+<!-- PUBLISHER.JS -->
+<!-- <script type="text/javascript" src="js/publisher_gui_ros.js"></script> -->
+<!-- Importing jQuery library -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 </body>
 </html>
