@@ -1,4 +1,7 @@
-#include <iostream>
+
+#ifndef _COW_H
+#define _COW_H
+
 #include <vector>
 #include <memory>
 
@@ -63,16 +66,5 @@ private:
     std::shared_ptr<std::vector<T> > m_v;
 };
 
-int main(int argc, const char* argv[]) {
-    int sum = 0;
-    cow_vector<int> v( std::vector<int>({ 1, 2, 3}) );
+#endif
 
-    for (int i = 0; i < 1000000; i++) {
-        cow_vector_read<int> v2 = v.for_reading();
-        for (const int& num : *v2) {
-            sum += num;
-        }
-    }
-    std::cout << sum << "\n";
-    return 0;
-}
