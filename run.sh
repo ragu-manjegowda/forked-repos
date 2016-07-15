@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export TIMEFORMAT=%R
 for i in $(seq 1 4); do
     echo $i
     echo ====
@@ -9,6 +9,8 @@ for i in $(seq 1 4); do
     time ./test_cow_read $i
     echo test_copy_read $i
     time ./test_copy_read $i
+    echo test_no_alloc_copy_read $i
+    time ./test_no_alloc_copy_read $i
 
     echo test_vec_write $i
     time ./test_vec_write $i
