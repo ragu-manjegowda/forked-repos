@@ -62,6 +62,6 @@ Every network you configure will be remembered and tried in the future on each r
 
 Caveats:
 
-The AP mode browser needs to control port 80.  It kills the various processes which might have control of the port.  However, it might miss some applications, in which case the web service will fail.  You can add the appropriate killall to the script.  The killed processes will restart when the system reboots back to client (station) mode.
+The AP mode web server needs to control port 80.  It kills the various processes which might have control of the port.  However, it might miss some applications, in which case the web service will fail.  You can add the appropriate killall to the script.  The killed processes will restart when the system reboots back to client (station) mode.
 
 
