@@ -29,10 +29,15 @@ Everything is auto-created as needed.
 Installing Dependencies:
 
 sudo apt-get install cpanminus sqlite3
+
 sudo cpanm Sys::Hostname
+
 sudo cpanm Socket
+
 sudo cpanm Data::Dumper
+
 sudo cpanm DBD::SQLite
+
 sudo cpanm DBI
 
 
@@ -41,8 +46,11 @@ Run the script:
 Then just run the script on each machine
 
 MachineA% perl tinymq.pl 9000 /var/tmp/tinymqdb
+
 MachineB% perl tinymq.pl 9000 /var/tmp/tinymqdb
+
 MachineC% perl tinymq.pl 9000 /var/tmp/tinymqdb
+
 and so on.
 
 (you may need to open up port 9000 if you have a firewall)
