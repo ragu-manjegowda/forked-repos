@@ -13,7 +13,7 @@ Installing the software
 
 Dependencies
 
-sudo apt-get install hostapd dnsmasq iptables cpanminus
+sudo apt-get install hostapd dnsmasq iptables cpanminus wireless-tools psmisc
 
 sudo cpanm HTTP::Server::Simple
 
