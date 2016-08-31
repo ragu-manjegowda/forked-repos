@@ -66,6 +66,7 @@ if ( -f $cfgfile) {
 	    print <<EOF;
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 </head>
 <body>
 <h2>Reconfiguring to client mode</h2>
@@ -79,6 +80,7 @@ EOF
 	    print <<EOF;
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 </head>
 <body>
 <h2>Enter Wifi Credentials</h2>
