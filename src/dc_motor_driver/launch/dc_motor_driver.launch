@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+<arg name="test_mode" default="False"/>
+  
+  <node pkg="dc_motor_driver" type="motor_driver.py" name="motor_driver" respawn="true" output="screen">
+    <param name="test_mode" value="$(arg test_mode)" />
+    <param name="param_path" value="$(find dc_motor_driver)/params/motor_params.yaml"/>
+  </node>
+</launch>

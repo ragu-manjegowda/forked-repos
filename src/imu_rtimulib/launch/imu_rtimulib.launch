@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>  
+  <node pkg="imu_rtimulib" type="read_imu.py" name="read_imu" respawn="true" output="screen">
+    <param name="calib_path" value="$(find imu_rtimulib)/params/imu_calib.ini" />
+  </node>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/pi/catkin_ws/install
+
+Name: apriltags_ros
+Description: Description of apriltags_ros
+Version: 0.1.1
+Cflags: -I/home/pi/catkin_ws/install/include -I/usr/include/eigen3
+Libs: -L/home/pi/catkin_ws/install/lib -lapriltag_detector
+Requires: apriltags image_transport roscpp sensor_msgs geometry_msgs tf cv_bridge message_runtime nodelet std_msgs

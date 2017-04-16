@@ -1,0 +1,2 @@
+/usr/bin/ar cr /home/pi/catkin_ws/devel/lib/libraspicli.a  CMakeFiles/raspicli.dir/src/RaspiCLI.cpp.o
+/usr/bin/ranlib /home/pi/catkin_ws/devel/lib/libraspicli.a

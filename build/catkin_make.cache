@@ -1,0 +1,2 @@
+apriltags_ros/apriltags:apriltags_ros/apriltags_ros:dc_motor_driver:imu_rtimulib:raspicam_node:robot_control:robot_launch
+-DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/pi/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pi/catkin_ws/install -G Unix Makefiles
