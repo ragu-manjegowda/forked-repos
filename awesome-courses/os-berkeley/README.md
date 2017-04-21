@@ -4,4 +4,4 @@
 
 > Operating Systems and Systems Programming
 
-> The course website [链接](https://cs162.eecs.berkeley.edu/)
+> [The course website](https://cs162.eecs.berkeley.edu/)
