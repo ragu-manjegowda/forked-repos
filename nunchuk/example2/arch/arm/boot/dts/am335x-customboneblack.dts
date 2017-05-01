@@ -1,0 +1,27 @@
+/dts-v1/;
+
+#include "am33xx.dtsi"
+#include "am335x-bone-common.dtsi"
+
+/ {
+       model = "TI AM335x BeagleBone Black";
+       compatible = "ti,am335x-bone-black", "ti,am335x-bone", "ti,am33xx";
+};
+
+&i2c1 {
+  status = "okay";
+  bus_freq = <100000>;
+
+  nunchuk@52 {
+    model = "Nintendo Wiichuk";
+    compatible = "nintendo,nunchuk";
+    reg = <0x52>;
+  };
+
+	i2c1_pins: pinmux_i2c1_pins {
+		pinctrl-single,pins = <
+			0x158 (PIN_INPUT_PULLUP | MUX_MODE2)	/* spi0_d1.i2c1_sda */
+			0x15c (PIN_INPUT_PULLUP | MUX_MODE2)	/* spi0_cs0.i2c1_scl */
+		>;
+	};
+};
