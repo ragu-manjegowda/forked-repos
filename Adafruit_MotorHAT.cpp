@@ -4,6 +4,7 @@
 #include <string.h>
 #include <unistd.h>
 #include "PWM.h"
+#include <iostream>
 
 const unsigned char Adafruit_StepperMotor::MICROSTEP_CURVE[9] = {0, 50, 98, 142, 180, 212, 236, 250, 255};
 const int Adafruit_StepperMotor::step2coils[8][4] = {
@@ -148,7 +149,6 @@ int Adafruit_StepperMotor::oneStep(Direction dir, Style style) {
 		memcpy(&coils[0], &step2coils[currentstep/(MICROSTEPS/2)][0], sizeof(int)*4);
 	}
 
-	//print "coils state = " + str(coils)
 	hat->setPin(AIN2, coils[0]);
 	hat->setPin(BIN1, coils[1]);
 	hat->setPin(AIN1, coils[2]);
@@ -168,7 +168,7 @@ void Adafruit_StepperMotor::step(int steps, Direction direction, Style stepstyle
 		steps *= MICROSTEPS;
 	}
 
-	printf("%f sec per step",s_per_s);
+	std::cout << s_per_s << " sec per step" << std::endl;
 
 	for(int s = 0;s < steps; s++) {
 		lateststep = oneStep(direction, stepstyle);

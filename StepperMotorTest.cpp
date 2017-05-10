@@ -5,33 +5,33 @@
 
 Adafruit_MotorHAT hat;
 
-void my_handler(int s){
-  printf("Caught signal %d\n",s); fflush(stdout);
+void ctrl_c_handler(int s){
+  std::cout << "Caught signal " << s << std::endl;
   hat.resetAll();
   exit(1); 
 }
 
 int main(int argc, char** argv) {
-  signal(SIGINT, my_handler);
+  signal(SIGINT, ctrl_c_handler);
 
   auto& myStepper = hat.getStepper(1); // # motor port #1
-  std::cout << "Got stepper" << std::endl << std::flush;
+  std::cout << "Got stepper" << std::endl;
   myStepper.setSpeed(30); //  # 30 RPM
 
   while (true) {
-    printf("Single coil steps");
+    std::cout << "Single coil steps" << std::endl;
     myStepper.step(100, FORWARD,  SINGLE);
     myStepper.step(100, BACKWARD, SINGLE);
 
-    printf("Double coil steps");
+    std::cout << "Double coil steps" << std::endl;
     myStepper.step(100, FORWARD,  DOUBLE);
     myStepper.step(100, BACKWARD, DOUBLE);
 
-    printf("Interleaved coil steps");
+    std::cout << "Interleaved coil steps" << std::endl;
     myStepper.step(100, FORWARD,  INTERLEAVE);
     myStepper.step(100, BACKWARD, INTERLEAVE);
 
-    printf("Microsteps");
+    std::cout << "Microsteps" << std::endl;
     myStepper.step(100, FORWARD,  MICROSTEP);
     myStepper.step(100, BACKWARD, MICROSTEP);
   }
