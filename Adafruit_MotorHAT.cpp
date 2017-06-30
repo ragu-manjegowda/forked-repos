@@ -18,7 +18,7 @@ const int Adafruit_StepperMotor::step2coils[8][4] = {
                            {1, 0, 0, 1} };
 
 Adafruit_StepperMotor::Adafruit_StepperMotor(Adafruit_MotorHAT* _hat, int num, int steps) {
-        hat = _hat;
+    hat = _hat;
 	revsteps = steps;
 	motornum = num;
 	sec_per_step = 0.1;
@@ -185,11 +185,65 @@ void Adafruit_StepperMotor::step(int steps, Direction direction, Style stepstyle
 	}
 }
 
+Adafruit_DCMotor::Adafruit_DCMotor(Adafruit_MotorHAT* _hat, int num) {
+    hat = _hat;
+	motornum = num;
+	
+	PWM = 0;
+	IN1 = 0;
+	IN2 = 0;
+	if (num == 0) {
+		PWM = 8;
+		IN1 = 9;
+		IN2 = 10;
+	} else if (num == 1) {
+		PWM = 13;
+		IN1 = 12;
+		IN2 = 11;
+	} else if (num == 2) {
+		PWM = 2;
+		IN1 = 3;
+		IN2 = 4;
+	} else if (num == 3) {
+		PWM = 7;
+		IN1 = 6;
+		IN2 = 5;
+	} else throw "MotorHAT Motor must be between 1 and 4 inclusive";
+}
+
+void Adafruit_DCMotor::run(Direction dir) {
+	if ( dir == FORWARD) {
+		hat->setPin(IN2,0);
+		hat->setPin(IN1,1);
+	}
+	if ( dir == BACKWARD) {
+		hat->setPin(IN1,0);
+		hat->setPin(IN2,1);
+	}
+	if ( dir == RELEASE) {
+		hat->setPin(IN1,0);
+		hat->setPin(IN2,0);
+	}
+}
+
+void Adafruit_DCMotor::setSpeed(int speed) {
+	if (speed < 0) {
+		speed = 0;
+	}
+	if (speed > 255) {
+		speed = 255;
+	}
+	setPWM(PWM, 0, speed*16);
+}
+
 Adafruit_MotorHAT::Adafruit_MotorHAT(int addr, int freq, int i2c, int i2c_bus) {
 	_frequency = freq;
-        for(int idx = 1; idx <= 2; idx++) {
-	  steppers.push_back(Adafruit_StepperMotor(this, idx));
-        }
+	for(int idx = 1; idx <= 2; idx++) {
+		steppers.push_back(Adafruit_StepperMotor(this, idx));
+    }
+	for(int idx = 0; idx <= 1; idx++) {
+		dcs.push_back(Adafruit_DCMotor(this, idx));
+    }
 	initPWM(addr);
 	setPWMFreq(_frequency);
 }
@@ -213,6 +267,12 @@ Adafruit_StepperMotor& Adafruit_MotorHAT::getStepper(int num) {
 	if ((num < 1) || (num > 2))
 		throw "MotorHAT Stepper must be between 1 and 2 inclusive";
 	return steppers[num-1];
+}
+
+Adafruit_DCMotor& Adafruit_MotorHAT::getDC(int num) {
+	if ((num < 1) || (num > 2))
+		throw "MotorHAT DC must be between 1 and 4 inclusive";
+	return dcs[num-1];
 }
 
 void Adafruit_MotorHAT::resetAll() {

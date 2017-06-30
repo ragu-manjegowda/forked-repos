@@ -6,5 +6,8 @@ Use this library at your own peril! I believe everything was ported correctly, b
 
 Make sure you have libi2c-dev installed, i.e. "sudo apt-get install libi2c-dev"
 
-Type "make" to compile, "./StepperMotorTest" to run
+Type "make" to compile 
 
+"./StepperMotorTest" to run as stepper motor
+
+"./DCMotorTest" to run as DC motor
