@@ -241,7 +241,7 @@ Adafruit_MotorHAT::Adafruit_MotorHAT(int addr, int freq, int i2c, int i2c_bus) {
 	for(int idx = 1; idx <= 2; idx++) {
 		steppers.push_back(Adafruit_StepperMotor(this, idx));
     }
-	for(int idx = 0; idx <= 1; idx++) {
+	for(int idx = 0; idx <= 3; idx++) {
 		dcs.push_back(Adafruit_DCMotor(this, idx));
     }
 	initPWM(addr);
@@ -270,7 +270,7 @@ Adafruit_StepperMotor& Adafruit_MotorHAT::getStepper(int num) {
 }
 
 Adafruit_DCMotor& Adafruit_MotorHAT::getDC(int num) {
-	if ((num < 1) || (num > 2))
+	if ((num < 1) || (num > 4))
 		throw "MotorHAT DC must be between 1 and 4 inclusive";
 	return dcs[num-1];
 }
