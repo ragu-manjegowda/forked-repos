@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+    // Load the Visualization API and the piechart package.
+    google.load('visualization', '1', {'packages':['charteditor']});
+
+    var wrapper;
+
+    function init() {
+      var data = new google.visualization.DataTable({
+ "rows": [
+  {
+   "c": [
+    {
+     "v": 3
+    }, 
+    {
+     "v": 10
+    }, 
+    {
+     "v": 1
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 4
+    }, 
+    {
+     "v": 200
+    }, 
+    {
+     "v": 20
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 5
+    }, 
+    {
+     "v": 400
+    }, 
+    {
+     "v": 40
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 6
+    }, 
+    {
+     "v": 460
+    }, 
+    {
+     "v": 46
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 7
+    }, 
+    {
+     "v": 1120
+    }, 
+    {
+     "v": 112
+    }
+   ]
+  }
+ ], 
+ "cols": [
+  {
+   "type": "number", 
+   "label": "Something"
+  }, 
+  {
+   "type": "number", 
+   "label": "Eppek"
+  }, 
+  {
+   "type": "number", 
+   "label": "Pendir"
+  }
+ ]
+});
+      wrapper = new google.visualization.ChartWrapper({
+        dataTable: data,
+        options: {"width": 1440, "interpolateNulls": true, "title": "Test Plot 2", "pointSize": 2, "height": 900},
+        containerId: 'visualization',
+        chartType: 'LineChart'
+      });
+      wrapper.draw();
+    }
+
+    function openEditor() {
+      // Handler for the "Open Editor" button.
+      var editor = new google.visualization.ChartEditor();
+      google.visualization.events.addListener(editor, 'ok',
+        function() {
+          wrapper = editor.getChartWrapper();
+          wrapper.draw(document.getElementById('visualization'));
+      });
+      editor.openDialog(wrapper);
+    }
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.setOnLoadCallback(init);
+
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <input type='button' onclick='openEditor()' value='Customize Plot'>
+    <div id='visualization'></div>
+  </body>
+</html>

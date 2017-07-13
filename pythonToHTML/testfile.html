@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+    // Load the Visualization API and the piechart package.
+    google.load('visualization', '1', {'packages':['charteditor']});
+
+    var wrapper;
+
+    function init() {
+      var data = new google.visualization.DataTable({
+ "rows": [
+  {
+   "c": [
+    {
+     "v": -10
+    }, 
+    {
+     "v": 10
+    }, 
+    {
+     "v": null
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 10
+    }, 
+    {
+     "v": 200
+    }, 
+    {
+     "v": null
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 4
+    }, 
+    {
+     "v": 400
+    }, 
+    {
+     "v": 1000
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 5
+    }, 
+    {
+     "v": 460
+    }, 
+    {
+     "v": null
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 6
+    }, 
+    {
+     "v": 1120
+    }, 
+    {
+     "v": 660
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 7
+    }, 
+    {
+     "v": 540
+    }, 
+    {
+     "v": 1170
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 90
+    }, 
+    {
+     "v": null
+    }, 
+    {
+     "v": 1030
+    }
+   ]
+  }, 
+  {
+   "c": [
+    {
+     "v": 11
+    }, 
+    {
+     "v": null
+    }, 
+    {
+     "v": 700
+    }
+   ]
+  }
+ ], 
+ "cols": [
+  {
+   "type": "number", 
+   "label": "Something"
+  }, 
+  {
+   "type": "number", 
+   "label": "Expenses"
+  }, 
+  {
+   "type": "number", 
+   "label": "Sales"
+  }
+ ]
+});
+      wrapper = new google.visualization.ChartWrapper({
+        dataTable: data,
+        options: {"pointSize": 2, "interpolateNulls": true, "title": "Test plot", "height": 900, "width": 1440, "vAxis": {"maxValue": 1200, "minValue": -10}},
+        containerId: 'visualization',
+        chartType: 'LineChart'
+      });
+      wrapper.draw();
+    }
+
+    function openEditor() {
+      // Handler for the "Open Editor" button.
+      var editor = new google.visualization.ChartEditor();
+      google.visualization.events.addListener(editor, 'ok',
+        function() {
+          wrapper = editor.getChartWrapper();
+          wrapper.draw(document.getElementById('visualization'));
+      });
+      editor.openDialog(wrapper);
+    }
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.setOnLoadCallback(init);
+
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <input type='button' onclick='openEditor()' value='Customize Plot'>
+    <div id='visualization'></div>
+  </body>
+</html>
