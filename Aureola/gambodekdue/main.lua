@@ -267,7 +267,7 @@ function conky_main(  )
 	cairo_set_font_size(cr, item_font_size);
 
 	-- name text
-	text = "Top 10 Process";
+	text = "Top 10 Process (CPU)";
 	cairo_text_extents(cr, text, extents)
 	cairo_move_to(cr, item_endx - extents.width/2, item_endy + item_font_size+2);
 	cairo_show_text(cr, text);
@@ -613,7 +613,7 @@ function conky_main(  )
 	cairo_set_font_size(cr, item_font_size);
 
 	-- name text
-	text = "Top 10 Process";
+	text = "Top 10 Process (RAM)";
 	cairo_text_extents(cr, text, extents)
 	cairo_move_to(cr, item_endx - extents.width/2, item_endy + item_font_size+2);
 	cairo_show_text(cr, text);
@@ -958,59 +958,6 @@ function conky_main(  )
 	cairo_move_to(cr, item_centerx - extents.width/2, item_centery + item_radius + item_font_size + 8);
 	cairo_show_text(cr, text);
 
-
-
-	-- SPOTIFY --------------------------------------------------------------------------
-
-	local angle = 270*math.pi/180;
-	local item_startx = centerx + math.cos(angle) * face_radius;
-	local item_starty = centery + math.sin(angle) * face_radius;
-	local item_endx = centerx + math.cos(angle) * width/6;
-	local item_endy = centery + math.sin(angle) * height/6;
-	local item_curvex = centerx + math.cos(angle) * width/12;
-	local item_curvey = centery + math.sin(angle) * height/10;
-	local item_radius = 15;
-	local item_centerx = item_endx + math.cos(angle) * (item_radius + 5);
-	local item_centery = item_endy + math.sin(angle) * (item_radius + 5);
-	local item_font_size = height/50;
-
-	-- arrow to root
-	cairo_move_to(cr, item_startx, item_starty);
-	cairo_curve_to(cr, item_curvex, item_curvey, item_curvex, item_curvey+100, item_endx, item_endy);
-	set_color(1,0.5);
-	cairo_stroke(cr);
-
-	-- background circle
-	cairo_arc(cr, item_centerx, item_centery, item_radius+5,  0, 2*math.pi );
-	set_color(1,0.4);
-	cairo_fill(cr);
-
-	-- root drive image
-	local ir = cairo_create(cs);
-	image_path = "spotify";
-	if color == "WHITE" then
-		image_path = pathway.."white/"..image_path
-	end
-	if color == "DARK" then
-		image_path = pathway.."dark/"..image_path
-	end
-	draw_image(ir, item_centerx, item_centery, item_radius, image_path);
-
-	-- outside boundry
-	cairo_arc(cr, item_centerx, item_centery, item_radius + 5,  0, 2*math.pi );
-	set_color(1,1);
-	cairo_stroke(cr);
-
-	-- font settings
-	set_color(1,1);
-	cairo_select_font_face(cr, "Inconsolata", 0 , 1);
-	cairo_set_font_size(cr, item_font_size);
-
-	-- name text
-	text = "SPOTIFY";
-	cairo_text_extents(cr, text, extents)
-	cairo_move_to(cr, item_centerx - extents.width/2, item_centery - item_radius - 10);
-	cairo_show_text(cr, text);
 
 
 -- TEMP ------------------------------------------------------------ temp ----------------------------------------------------------------------------
