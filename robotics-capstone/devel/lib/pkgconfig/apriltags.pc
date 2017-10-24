@@ -1,0 +1,8 @@
+prefix=/home/pi/catkin_ws/devel
+
+Name: apriltags
+Description: Description of apriltags
+Version: 0.1.1
+Cflags: -I/home/pi/catkin_ws/src/apriltags_ros/apriltags/include -I/usr/include/eigen3 -I/usr/include/opencv -I/usr/include
+Libs: -L/home/pi/catkin_ws/devel/lib -lapriltags -l:/usr/lib/arm-linux-gnueabihf/libopencv_videostab.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_video.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_superres.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_stitching.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_photo.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_ocl.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_objdetect.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_ml.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_legacy.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_imgproc.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_highgui.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_gpu.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_flann.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_features2d.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_core.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_contrib.so.2.4.9 -l:/usr/lib/arm-linux-gnueabihf/libopencv_calib3d.so.2.4.9
+Requires: 

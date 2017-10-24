@@ -1,0 +1,8 @@
+prefix=/home/pi/catkin_ws/devel
+
+Name: dc_motor_driver
+Description: Description of dc_motor_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/catkin_ws/devel/lib 
+Requires: 

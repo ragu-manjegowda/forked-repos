@@ -1,0 +1,8 @@
+prefix=/home/pi/catkin_ws/devel
+
+Name: imu_rtimulib
+Description: Description of imu_rtimulib
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/catkin_ws/devel/lib 
+Requires: 
