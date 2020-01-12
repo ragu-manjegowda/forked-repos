@@ -7,3 +7,6 @@
 [submodule "CtCI"]
 	path = CtCI
 	url = https://github.com/careercup/CtCI-6th-Edition-cpp
+[submodule "Arduino_FreeRTOS_Library"]
+	path = Arduino_FreeRTOS_Library
+	url = https://github.com/feilipu/Arduino_FreeRTOS_Library.git
