@@ -10,9 +10,6 @@
 [submodule "Arduino_FreeRTOS_Library"]
 	path = Arduino_FreeRTOS_Library
 	url = https://github.com/feilipu/Arduino_FreeRTOS_Library.git
-[submodule "MapHtmlWebsocket"]
-	path = MapHtmlWebsocket
-	url = https://github.com/fly4smartcity/rendezvous.git
 [submodule "Arduino_CMAKE"]
 	path = Arduino_CMAKE
 	url = https://github.com/queezythegreat/arduino-cmake.git
@@ -28,3 +25,6 @@
 [submodule "Robotics_Capstone"]
 	path = Robotics_Capstone
 	url = https://github.com/Bartman0/robotics-capstone.git
+[submodule "MapHtmlWebsocket"]
+	path = MapHtmlWebsocket
+	url = https://github.com/fly4smartcity/rendezvous.git
