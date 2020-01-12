@@ -1,0 +1,3 @@
+[submodule "AdafruitStepperMotorHAT_CPP"]
+	path = AdafruitStepperMotorHAT_CPP
+	url = https://github.com/threebrooks/AdafruitStepperMotorHAT_CPP.git
