@@ -1,3 +1,6 @@
 [submodule "AdafruitStepperMotorHAT_CPP"]
 	path = AdafruitStepperMotorHAT_CPP
 	url = https://github.com/threebrooks/AdafruitStepperMotorHAT_CPP.git
+[submodule "Awesome-CV"]
+	path = Awesome-CV
+	url = https://github.com/posquit0/Awesome-CV.git
