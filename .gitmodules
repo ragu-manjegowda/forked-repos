@@ -16,3 +16,6 @@
 [submodule "Arduino_CMAKE"]
 	path = Arduino_CMAKE
 	url = https://github.com/queezythegreat/arduino-cmake.git
+[submodule "Awesome_Courses"]
+	path = Awesome_Courses
+	url = https://github.com/prakhar1989/awesome-courses.git
