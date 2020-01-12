@@ -4,3 +4,6 @@
 [submodule "Awesome-CV"]
 	path = Awesome-CV
 	url = https://github.com/posquit0/Awesome-CV.git
+[submodule "CtCI"]
+	path = CtCI
+	url = https://github.com/careercup/CtCI-6th-Edition-cpp
