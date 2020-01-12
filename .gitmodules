@@ -22,3 +22,6 @@
 [submodule "Betty"]
 	path = Betty
 	url = https://github.com/pickhardt/betty.git
+[submodule "Self_Driving_Robot_Car"]
+	path = Self_Driving_Robot_Car
+	url = https://github.com/bdjukic/selfdriving-robot-car.git
