@@ -19,3 +19,6 @@
 [submodule "Awesome_Courses"]
 	path = Awesome_Courses
 	url = https://github.com/prakhar1989/awesome-courses.git
+[submodule "Betty"]
+	path = Betty
+	url = https://github.com/pickhardt/betty.git
