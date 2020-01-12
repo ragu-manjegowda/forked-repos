@@ -25,3 +25,6 @@
 [submodule "Self_Driving_Robot_Car"]
 	path = Self_Driving_Robot_Car
 	url = https://github.com/bdjukic/selfdriving-robot-car.git
+[submodule "Robotics_Capstone"]
+	path = Robotics_Capstone
+	url = https://github.com/Bartman0/robotics-capstone.git
