@@ -10,3 +10,6 @@
 [submodule "Arduino_FreeRTOS_Library"]
 	path = Arduino_FreeRTOS_Library
 	url = https://github.com/feilipu/Arduino_FreeRTOS_Library.git
+[submodule "MapHtmlWebsocket"]
+	path = MapHtmlWebsocket
+	url = https://github.com/fly4smartcity/rendezvous.git
