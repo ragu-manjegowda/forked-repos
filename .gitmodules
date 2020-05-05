@@ -31,3 +31,6 @@
 [submodule "rendezvous/jQuery-Flight-Indicators"]
 	path = rendezvous/jQuery-Flight-Indicators
 	url = https://github.com/sebmatton/jQuery-Flight-Indicators.git
+[submodule "udacity-cs344-colab"]
+	path = udacity-cs344-colab
+	url = https://github.com/depctg/udacity-cs344-colab.git
