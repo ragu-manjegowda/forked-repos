@@ -34,3 +34,6 @@
 [submodule "udacity-cs344-colab"]
 	path = udacity-cs344-colab
 	url = https://github.com/depctg/udacity-cs344-colab.git
+[submodule "config"]
+	path = config
+	url = https://github.com/ph03/config.git
