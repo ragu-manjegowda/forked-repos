@@ -40,3 +40,6 @@
 [submodule "youtube-dl"]
 	path = youtube-dl
 	url = https://github.com/ytdl-org/youtube-dl.git
+[submodule "thefuck"]
+	path = thefuck
+	url = https://github.com/nvbn/thefuck.git
