@@ -37,3 +37,6 @@
 [submodule "config"]
 	path = config
 	url = https://github.com/ph03/config.git
+[submodule "youtube-dl"]
+	path = youtube-dl
+	url = https://github.com/ytdl-org/youtube-dl.git
