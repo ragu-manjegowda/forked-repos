@@ -43,3 +43,6 @@
 [submodule "thefuck"]
 	path = thefuck
 	url = https://github.com/nvbn/thefuck.git
+[submodule "system-design-primer"]
+	path = system-design-primer
+	url = https://github.com/donnemartin/system-design-primer.git
