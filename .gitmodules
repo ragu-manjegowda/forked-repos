@@ -49,3 +49,6 @@
 [submodule "grokking-system-design"]
 	path = grokking-system-design
 	url = https://github.com/lei-hsia/grokking-system-design.git
+[submodule "system-design-interview"]
+	path = system-design-interview
+	url = https://github.com/checkcheckzz/system-design-interview.git
