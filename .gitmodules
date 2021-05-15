@@ -58,3 +58,6 @@
 [submodule "cPlusPlusAlgos"]
 	path = cPlusPlusAlgos
 	url = https://github.com/TheAlgorithms/C-Plus-Plus.git
+[submodule "projectBasedLearning"]
+	path = projectBasedLearning
+	url = https://github.com/tuvtran/project-based-learning.git
