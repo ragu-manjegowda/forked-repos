@@ -52,3 +52,6 @@
 [submodule "system-design-interview"]
 	path = system-design-interview
 	url = https://github.com/checkcheckzz/system-design-interview.git
+[submodule "bestWebsitesAProgrammerShouldVisit"]
+	path = bestWebsitesAProgrammerShouldVisit
+	url = https://github.com/sdmg15/Best-websites-a-programmer-should-visit.git
