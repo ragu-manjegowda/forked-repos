@@ -55,3 +55,6 @@
 [submodule "bestWebsitesAProgrammerShouldVisit"]
 	path = bestWebsitesAProgrammerShouldVisit
 	url = https://github.com/sdmg15/Best-websites-a-programmer-should-visit.git
+[submodule "cPlusPlusAlgos"]
+	path = cPlusPlusAlgos
+	url = https://github.com/TheAlgorithms/C-Plus-Plus.git
