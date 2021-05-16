@@ -46,9 +46,6 @@
 [submodule "system-design-primer"]
 	path = system-design-primer
 	url = https://github.com/donnemartin/system-design-primer.git
-[submodule "grokking-system-design"]
-	path = grokking-system-design
-	url = https://github.com/lei-hsia/grokking-system-design.git
 [submodule "system-design-interview"]
 	path = system-design-interview
 	url = https://github.com/checkcheckzz/system-design-interview.git
