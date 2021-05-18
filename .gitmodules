@@ -58,3 +58,6 @@
 [submodule "projectBasedLearning"]
 	path = projectBasedLearning
 	url = https://github.com/tuvtran/project-based-learning.git
+[submodule "awesomeInterviewQuestions"]
+	path = awesomeInterviewQuestions
+	url = https://github.com/DopplerHQ/awesome-interview-questions.git
