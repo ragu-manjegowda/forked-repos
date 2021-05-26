@@ -61,3 +61,6 @@
 [submodule "awesomeInterviewQuestions"]
 	path = awesomeInterviewQuestions
 	url = https://github.com/DopplerHQ/awesome-interview-questions.git
+[submodule "Awesome-Mac"]
+	path = Awesome-Mac
+	url = https://github.com/jaywcjlove/awesome-mac.git
