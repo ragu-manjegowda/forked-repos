@@ -64,3 +64,6 @@
 [submodule "Awesome-Mac"]
 	path = Awesome-Mac
 	url = https://github.com/jaywcjlove/awesome-mac.git
+[submodule "dotfiles"]
+	path = dotfiles
+	url = https://github.com/cowboy/dotfiles.git
