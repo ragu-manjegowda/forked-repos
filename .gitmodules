@@ -67,3 +67,6 @@
 [submodule "dotfiles"]
 	path = dotfiles
 	url = https://github.com/cowboy/dotfiles.git
+[submodule "GFPGAN"]
+	path = GFPGAN
+	url = https://github.com/TencentARC/GFPGAN.git
