@@ -64,9 +64,15 @@
 [submodule "Awesome-Mac"]
 	path = Awesome-Mac
 	url = https://github.com/jaywcjlove/awesome-mac.git
-[submodule "dotfiles"]
-	path = dotfiles
-	url = https://github.com/cowboy/dotfiles.git
 [submodule "GFPGAN"]
 	path = GFPGAN
 	url = https://github.com/TencentARC/GFPGAN.git
+[submodule "wsl-dotfiles"]
+	path = wsl-dotfiles
+	url = https://github.com/Xyene/wsl-dotfiles.git
+[submodule "k-vernooy_dotfiles"]
+	path = k-vernooy_dotfiles
+	url = https://github.com/k-vernooy/dotfiles.git
+[submodule "ibhagwan_dots"]
+	path = ibhagwan_dots
+	url = https://github.com/ibhagwan/dots.git
