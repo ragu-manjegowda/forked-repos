@@ -76,3 +76,6 @@
 [submodule "ibhagwan_dots"]
 	path = ibhagwan_dots
 	url = https://github.com/ibhagwan/dots.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/danielnehrig/nvim.git
