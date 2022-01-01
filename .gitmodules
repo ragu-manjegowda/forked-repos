@@ -79,3 +79,6 @@
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/danielnehrig/nvim.git
+[submodule "public-apis"]
+	path = public-apis
+	url = https://github.com/public-apis/public-apis.git
