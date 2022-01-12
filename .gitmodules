@@ -82,3 +82,6 @@
 [submodule "public-apis"]
 	path = public-apis
 	url = https://github.com/public-apis/public-apis.git
+[submodule "awesome-dotfiles"]
+	path = awesome-dotfiles
+	url = https://github.com/webpro/awesome-dotfiles.git
