@@ -85,3 +85,6 @@
 [submodule "awesome-dotfiles"]
 	path = awesome-dotfiles
 	url = https://github.com/webpro/awesome-dotfiles.git
+[submodule "theEmbeddedNewTestament.github.io"]
+	path = theEmbeddedNewTestament.github.io
+	url = https://github.com/theEmbeddedGeorge/theEmbeddedNewTestament.github.io.git
