@@ -1,90 +1,150 @@
 [submodule "AdafruitStepperMotorHAT_CPP"]
 	path = AdafruitStepperMotorHAT_CPP
 	url = https://github.com/threebrooks/AdafruitStepperMotorHAT_CPP.git
+	update = rebase
+	branch = master
 [submodule "Awesome-CV"]
 	path = Awesome-CV
 	url = https://github.com/posquit0/Awesome-CV.git
+	update = rebase
+	branch = master
 [submodule "CtCI"]
 	path = CtCI
 	url = https://github.com/careercup/CtCI-6th-Edition-cpp
+	update = rebase
+	branch = master
 [submodule "Arduino_FreeRTOS_Library"]
 	path = Arduino_FreeRTOS_Library
 	url = https://github.com/feilipu/Arduino_FreeRTOS_Library.git
+	update = rebase
+	branch = master
 [submodule "Arduino_CMAKE"]
 	path = Arduino_CMAKE
 	url = https://github.com/queezythegreat/arduino-cmake.git
+	update = rebase
+	branch = master
 [submodule "Awesome_Courses"]
 	path = Awesome_Courses
 	url = https://github.com/prakhar1989/awesome-courses.git
+	update = rebase
+	branch = master
 [submodule "Betty"]
 	path = Betty
 	url = https://github.com/pickhardt/betty.git
+	update = rebase
+	branch = master
 [submodule "Self_Driving_Robot_Car"]
 	path = Self_Driving_Robot_Car
 	url = https://github.com/bdjukic/selfdriving-robot-car.git
+	update = rebase
+	branch = master
 [submodule "Interview-Prep"]
 	path = Interview-Prep
 	url = https://github.com/derekargueta/Interview-Prep.git
+	update = rebase
+	branch = master
 [submodule "rendezvous"]
 	path = rendezvous
 	url = https://github.com/fly4smartcity/rendezvous.git
+	update = rebase
+	branch = master
 [submodule "rendezvous/jQuery-Flight-Indicators"]
 	path = rendezvous/jQuery-Flight-Indicators
 	url = https://github.com/sebmatton/jQuery-Flight-Indicators.git
+	update = rebase
+	branch = master
 [submodule "udacity-cs344-colab"]
 	path = udacity-cs344-colab
 	url = https://github.com/depctg/udacity-cs344-colab.git
+	update = rebase
+	branch = master
 [submodule "config"]
 	path = config
 	url = https://github.com/ph03/config.git
+	update = rebase
+	branch = master
 [submodule "youtube-dl"]
 	path = youtube-dl
 	url = https://github.com/ytdl-org/youtube-dl.git
+	update = rebase
+	branch = master
 [submodule "thefuck"]
 	path = thefuck
 	url = https://github.com/nvbn/thefuck.git
+	update = rebase
+	branch = master
 [submodule "system-design-primer"]
 	path = system-design-primer
 	url = https://github.com/donnemartin/system-design-primer.git
+	update = rebase
+	branch = master
 [submodule "system-design-interview"]
 	path = system-design-interview
 	url = https://github.com/checkcheckzz/system-design-interview.git
+	update = rebase
+	branch = master
 [submodule "bestWebsitesAProgrammerShouldVisit"]
 	path = bestWebsitesAProgrammerShouldVisit
 	url = https://github.com/sdmg15/Best-websites-a-programmer-should-visit.git
+	update = rebase
+	branch = master
 [submodule "cPlusPlusAlgos"]
 	path = cPlusPlusAlgos
 	url = https://github.com/TheAlgorithms/C-Plus-Plus.git
+	update = rebase
+	branch = master
 [submodule "projectBasedLearning"]
 	path = projectBasedLearning
 	url = https://github.com/tuvtran/project-based-learning.git
+	update = rebase
+	branch = master
 [submodule "awesomeInterviewQuestions"]
 	path = awesomeInterviewQuestions
 	url = https://github.com/DopplerHQ/awesome-interview-questions.git
+	update = rebase
+	branch = master
 [submodule "Awesome-Mac"]
 	path = Awesome-Mac
 	url = https://github.com/jaywcjlove/awesome-mac.git
+	update = rebase
+	branch = master
 [submodule "GFPGAN"]
 	path = GFPGAN
 	url = https://github.com/TencentARC/GFPGAN.git
+	update = rebase
+	branch = master
 [submodule "wsl-dotfiles"]
 	path = wsl-dotfiles
 	url = https://github.com/Xyene/wsl-dotfiles.git
+	update = rebase
+	branch = master
 [submodule "k-vernooy_dotfiles"]
 	path = k-vernooy_dotfiles
 	url = https://github.com/k-vernooy/dotfiles.git
+	update = rebase
+	branch = master
 [submodule "ibhagwan_dots"]
 	path = ibhagwan_dots
 	url = https://github.com/ibhagwan/dots.git
+	update = rebase
+	branch = master
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/danielnehrig/nvim.git
+	update = rebase
+	branch = master
 [submodule "public-apis"]
 	path = public-apis
 	url = https://github.com/public-apis/public-apis.git
+	update = rebase
+	branch = master
 [submodule "awesome-dotfiles"]
 	path = awesome-dotfiles
 	url = https://github.com/webpro/awesome-dotfiles.git
+	update = rebase
+	branch = master
 [submodule "theEmbeddedNewTestament.github.io"]
 	path = theEmbeddedNewTestament.github.io
 	url = https://github.com/theEmbeddedGeorge/theEmbeddedNewTestament.github.io.git
+	update = rebase
+	branch = master
