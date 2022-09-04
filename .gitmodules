@@ -148,3 +148,8 @@
 	url = https://github.com/theEmbeddedGeorge/theEmbeddedNewTestament.github.io.git
 	update = rebase
 	branch = master
+[submodule "every-programmer-should-know"]
+	path = every-programmer-should-know
+	url = https://github.com/mtdvio/every-programmer-should-know.git
+	update = rebase
+	branch = master
