@@ -168,3 +168,12 @@
 	url = https://github.com/andrewpetrochenkov/mac-appify.git
 	update = rebase
 	branch = master
+[submodule "llm/repomix"]
+	path = llm/repomix
+	url = https://github.com/yamadashy/repomix
+[submodule "llm/exo"]
+	path = llm/exo
+	url = https://github.com/exo-explore/exo
+[submodule "simplebank"]
+	path = simplebank
+	url = https://github.com/techschool/simplebank
