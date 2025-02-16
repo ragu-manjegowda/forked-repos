@@ -8,6 +8,11 @@
 	url = https://github.com/jaywcjlove/awesome-mac.git
 	update = rebase
 	branch = master
+[submodule "awesome-remote-job"]
+	path = awesome-remote-job
+	url = https://github.com/lukasz-madon/awesome-remote-job
+	update = rebase
+	branch = master
 [submodule "Awesome_Courses"]
 	path = Awesome_Courses
 	url = https://github.com/prakhar1989/awesome-courses.git
