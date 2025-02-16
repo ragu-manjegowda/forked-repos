@@ -53,6 +53,11 @@
 	url = https://github.com/derekargueta/Interview-Prep.git
 	update = rebase
 	branch = master
+[submodule "llm/code-qa"]
+	path = llm/code-qa
+	url = https://github.com/sankalp1999/code_qa.git
+	update = rebase
+	branch = main
 [submodule "llm/exo"]
 	path = llm/exo
 	url = https://github.com/exo-explore/exo
@@ -67,7 +72,7 @@
 	path = llm/open-voice
 	url = https://github.com/myshell-ai/OpenVoice
 	update = rebase
-	branch = master
+	branch = main
 [submodule "llm/repomix"]
 	path = llm/repomix
 	url = https://github.com/yamadashy/repomix
