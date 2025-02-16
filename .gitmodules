@@ -23,6 +23,11 @@
 	url = https://github.com/sdmg15/Best-websites-a-programmer-should-visit.git
 	update = rebase
 	branch = master
+[submodule "githubdaily"]
+	path = githubdaily
+	url = https://github.com/GitHubDaily/GitHubDaily
+	update = rebase
+	branch = master
 [submodule "educative.io_courses"]
 	path = educative.io_courses
 	url = https://github.com/techtanic/educative.io_courses.git
