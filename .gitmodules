@@ -48,11 +48,6 @@
 	url = https://github.com/derekargueta/Interview-Prep.git
 	update = rebase
 	branch = master
-[submodule "llm/repomix"]
-	path = llm/repomix
-	url = https://github.com/yamadashy/repomix
-	update = rebase
-	branch = master
 [submodule "llm/exo"]
 	path = llm/exo
 	url = https://github.com/exo-explore/exo
@@ -61,6 +56,16 @@
 [submodule "llm/goose"]
 	path = llm/goose
 	url = https://github.com/block/goose.git
+	update = rebase
+	branch = master
+[submodule "llm/open-voice"]
+	path = llm/open-voice
+	url = https://github.com/myshell-ai/OpenVoice
+	update = rebase
+	branch = master
+[submodule "llm/repomix"]
+	path = llm/repomix
+	url = https://github.com/yamadashy/repomix
 	update = rebase
 	branch = master
 [submodule "mac-appify"]
