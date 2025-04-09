@@ -28,6 +28,16 @@
 	url = https://github.com/sdmg15/Best-websites-a-programmer-should-visit.git
 	update = rebase
 	branch = master
+[submodule "course-piracy-index"]
+	path = course-piracy-index
+	url = https://github.com/ItIsMeCall911/Course-Piracy-Index.git
+	update = rebase
+	branch = main
+[submodule "dl_coursera"]
+	path = dl_coursera
+	url = https://github.com/FLZ101/dl_coursera.git
+	update = rebase
+	branch = master
 [submodule "githubdaily"]
 	path = githubdaily
 	url = https://github.com/GitHubDaily/GitHubDaily
