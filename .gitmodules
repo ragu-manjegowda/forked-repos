@@ -1,3 +1,8 @@
+[submodule "awesome-android-tv-foss-apps"]
+	path = awesome-android-tv-foss-apps
+	url = https://github.com/Generator/Awesome-Android-TV-FOSS-Apps.git
+	update = rebase
+	branch = master
 [submodule "Awesome-CV"]
 	path = Awesome-CV
 	url = https://github.com/posquit0/Awesome-CV.git
@@ -23,6 +28,11 @@
 	url = https://github.com/DopplerHQ/awesome-interview-questions.git
 	update = rebase
 	branch = master
+[submodule "better-fox"]
+	path = better-fox
+	url = https://github.com/yokoffing/Betterfox.git
+	update = rebase
+	branch = main
 [submodule "bestWebsitesAProgrammerShouldVisit"]
 	path = bestWebsitesAProgrammerShouldVisit
 	url = https://github.com/sdmg15/Best-websites-a-programmer-should-visit.git
@@ -128,6 +138,11 @@
 	url = https://github.com/techschool/simplebank
 	update = rebase
 	branch = master
+[submodule "system-design-101"]
+	path = system-design-101
+	url = https://github.com/ByteByteGoHq/system-design-101.git
+	update = rebase
+	branch = main
 [submodule "system-design-interview"]
 	path = system-design-interview
 	url = https://github.com/checkcheckzz/system-design-interview.git
@@ -136,6 +151,11 @@
 [submodule "system-design-primer"]
 	path = system-design-primer
 	url = https://github.com/donnemartin/system-design-primer.git
+	update = rebase
+	branch = master
+[submodule "the-book-of-secret-knowledge"]
+	path = the-book-of-secret-knowledge
+	url = https://github.com/trimstray/the-book-of-secret-knowledge.git
 	update = rebase
 	branch = master
 [submodule "theEmbeddedNewTestament.github.io"]
