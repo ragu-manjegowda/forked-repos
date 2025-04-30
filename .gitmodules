@@ -3,13 +3,13 @@
 	url = https://github.com/Generator/Awesome-Android-TV-FOSS-Apps.git
 	update = rebase
 	branch = master
-[submodule "Awesome-CV"]
-	path = Awesome-CV
+[submodule "awesome-cv"]
+	path = awesome-cv
 	url = https://github.com/posquit0/Awesome-CV.git
 	update = rebase
 	branch = master
-[submodule "Awesome-Mac"]
-	path = Awesome-Mac
+[submodule "awesome-mac"]
+	path = awesome-mac
 	url = https://github.com/jaywcjlove/awesome-mac.git
 	update = rebase
 	branch = master
@@ -18,13 +18,13 @@
 	url = https://github.com/lukasz-madon/awesome-remote-job
 	update = rebase
 	branch = master
-[submodule "Awesome_Courses"]
-	path = Awesome_Courses
+[submodule "awesome-courses"]
+	path = awesome-courses
 	url = https://github.com/prakhar1989/awesome-courses.git
 	update = rebase
 	branch = master
-[submodule "awesomeInterviewQuestions"]
-	path = awesomeInterviewQuestions
+[submodule "awesome-interview-questions"]
+	path = awesome-interview-questions
 	url = https://github.com/DopplerHQ/awesome-interview-questions.git
 	update = rebase
 	branch = master
@@ -33,8 +33,8 @@
 	url = https://github.com/yokoffing/Betterfox.git
 	update = rebase
 	branch = main
-[submodule "bestWebsitesAProgrammerShouldVisit"]
-	path = bestWebsitesAProgrammerShouldVisit
+[submodule "best-websites-a-programmer-should-visit"]
+	path = best-websites-a-programmer-should-visit
 	url = https://github.com/sdmg15/Best-websites-a-programmer-should-visit.git
 	update = rebase
 	branch = master
@@ -43,18 +43,18 @@
 	url = https://github.com/ItIsMeCall911/Course-Piracy-Index.git
 	update = rebase
 	branch = main
-[submodule "dl_coursera"]
-	path = dl_coursera
+[submodule "dl-coursera"]
+	path = dl-coursera
 	url = https://github.com/FLZ101/dl_coursera.git
 	update = rebase
 	branch = master
-[submodule "githubdaily"]
-	path = githubdaily
+[submodule "github-daily"]
+	path = github-daily
 	url = https://github.com/GitHubDaily/GitHubDaily
 	update = rebase
 	branch = master
-[submodule "educative.io_courses"]
-	path = educative.io_courses
+[submodule "educative.io-courses"]
+	path = educative.io-courses
 	url = https://github.com/techtanic/educative.io_courses.git
 	update = rebase
 	branch = master
@@ -63,13 +63,13 @@
 	url = https://github.com/mtdvio/every-programmer-should-know.git
 	update = rebase
 	branch = master
-[submodule "GFPGAN"]
-	path = GFPGAN
+[submodule "gfp-gan"]
+	path = gfp-gan
 	url = https://github.com/TencentARC/GFPGAN.git
 	update = rebase
 	branch = master
-[submodule "Interview-Prep"]
-	path = Interview-Prep
+[submodule "interview-prep"]
+	path = interview-prep
 	url = https://github.com/derekargueta/Interview-Prep.git
 	update = rebase
 	branch = master
@@ -103,13 +103,13 @@
 	url = https://github.com/andrewpetrochenkov/mac-appify.git
 	update = rebase
 	branch = master
-[submodule "macOS_Big_Sur_icons_replacements"]
-	path = macOS_Big_Sur_icons_replacements
+[submodule "macos-big-sur-icons-replacements"]
+	path = macos-big-sur-icons-replacements
 	url = https://github.com/elrumo/macOS_Big_Sur_icons_replacements.git
 	update = rebase
 	branch = master
-[submodule "projectBasedLearning"]
-	path = projectBasedLearning
+[submodule "project-based-learning"]
+	path = project-based-learning
 	url = https://github.com/tuvtran/project-based-learning.git
 	update = rebase
 	branch = master
@@ -133,8 +133,8 @@
 	url = https://github.com/nextjs/saas-starter.git
 	update = rebase
 	branch = master
-[submodule "simplebank"]
-	path = simplebank
+[submodule "simple-bank"]
+	path = simple-bank
 	url = https://github.com/techschool/simplebank
 	update = rebase
 	branch = master
@@ -158,8 +158,8 @@
 	url = https://github.com/trimstray/the-book-of-secret-knowledge.git
 	update = rebase
 	branch = master
-[submodule "theEmbeddedNewTestament.github.io"]
-	path = theEmbeddedNewTestament.github.io
+[submodule "the-embedded-new-testament.github.io"]
+	path = the-embedded-new-testament.github.io
 	url = https://github.com/theEmbeddedGeorge/theEmbeddedNewTestament.github.io.git
 	update = rebase
 	branch = master
